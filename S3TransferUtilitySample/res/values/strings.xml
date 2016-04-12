@@ -6,6 +6,10 @@
     <string name="download_selection_activity">Select a file from the bucket</string>
     <string name="download">Download</string>
     <string name="manage_download">Manage downloads</string>
+
+    <string name="view_sleep">View Sleep Data</string>
+    <string name="view_activity">View Activity Data</string>
+    <string name="view_phone">View Phone Data</string>
     <string name="upload">Upload</string>
     <string name="manage_upload">Manage uploads</string>
     <string name="upload_file">Upload a file</string>

@@ -31,6 +31,11 @@ public class MainActivity extends Activity {
     private Button btnDownload;
     private Button btnUpload;
 
+
+    private Button btnActivity;
+    private Button btnSleep;
+    private Button btnPhone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,23 +44,45 @@ public class MainActivity extends Activity {
     }
 
     private void initUI() {
-        btnDownload = (Button) findViewById(R.id.buttonDownloadMain);
-        btnUpload = (Button) findViewById(R.id.buttonUploadMain);
+        //btnDownload = (Button) findViewById(R.id.buttonDownloadMain);
+        //btnUpload = (Button) findViewById(R.id.buttonUploadMain);
 
-        btnDownload.setOnClickListener(new OnClickListener() {
+        btnActivity = (Button) findViewById(R.id.buttonActivityMain);
+        btnPhone = (Button) findViewById(R.id.buttonPhoneMain);
+        btnSleep = (Button) findViewById(R.id.buttonSleepMain);
+
+
+        btnActivity.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(MainActivity.this, DownloadActivity.class);
+                Intent intent = new Intent(MainActivity.this, ActivityActivity.class);
                 startActivity(intent);
             }
         });
 
-        btnUpload.setOnClickListener(new OnClickListener() {
+        btnSleep.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(MainActivity.this, UploadActivity.class);
+                Intent intent = new Intent(MainActivity.this, SleepActivity.class);
                 startActivity(intent);
             }
         });
+
+        //navigation
+        btnPhone.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(MainActivity.this, PhoneActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        btnUpload.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//                Intent intent = new Intent(MainActivity.this, UploadActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

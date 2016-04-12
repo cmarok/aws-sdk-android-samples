@@ -6,22 +6,31 @@
     android:padding="20dp" >
 
     <Button
-        android:id="@+id/buttonDownloadMain"
+        android:id="@+id/buttonActivityMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:padding="20dp"
-        android:text="@string/manage_download" />
+        android:text="@string/view_activity" />
 
     <Button
-        android:id="@+id/buttonUploadMain"
+        android:id="@+id/buttonSleepMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="@string/view_sleep" />
+
+    <Button
+        android:id="@+id/buttonPhoneMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="20dp"
         android:padding="20dp"
-        android:text="@string/manage_upload" />
+        android:text="@string/view_phone" />
 
 </LinearLayout>
